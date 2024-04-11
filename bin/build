@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+echo "---> Bcomms liveness Buildpack"
+
+# 1. GET ARGS
+layers_dir=$1
+plan_path=$3
+
+# 2. DOWNLOAD bcomms liveness binary
+liveness_layer_dir="${layers_dir}/liveness"
+mkdir -p "${liveness_layer_dir}"
+
+echo "Some file" > "${liveness_layer_dir}/liveness"

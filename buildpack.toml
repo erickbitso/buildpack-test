@@ -1,0 +1,16 @@
+# Buildpack API version
+api = "0.10"
+
+# Buildpack ID and metadata
+[buildpack]
+id = "samples/bcomms-liveness"
+version = "0.0.1"
+name = "Bcomms liveness Buildpack"
+
+# Targets the buildpack will work with
+[[targets]]
+os = "linux"
+
+# Stacks (deprecated) the buildpack will work with
+[[stacks]]
+id = "*"
